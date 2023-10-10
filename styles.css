@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.heading{
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20230423/pngtree-window-overlooking-the-bed-image_2492776.jpg);
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: rgba(0,0,0,0.35); /*(red,blue,gree,,blackish)*/
+    height: 100vh;
+    position: relative;
+    text-align: center;
+}
+.text{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left:50%;
+     transform: translate(-50%,-50%); /* (x-axis,y-axis) */
+}
+.button,
+.know-more{
+    background-color: goldenrod;
+    font-size: 20px;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;  /*(top,bottom;right left)*/
+    margin-top: 35px;
+    cursor: pointer;
+}
+.amenities{
+    margin-top: 80px;
+    text-align: center;
+    
+}
+.amenities ul{
+    display: inline-block;
+    text-align: left;
+    margin-top: 10px;
+    font-size: 17px;
+    margin-left: -30px;
+}
+.About{
+     float: left;
+    width: 50%; 
+    margin: 20px 0px 10px 35px;
+    text-align: center;
+    font-size: 17px;
+}
+.About > h1{
+    /* text-align: center; */
+    margin: 10px -50px 20px 10px;
+    text-decoration: underline;
+}
+.para{
+    margin-left: 20px;
+}
