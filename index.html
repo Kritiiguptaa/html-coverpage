@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/bb55a3add2.js" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Libre+Baskerville&family=Rubik+Iso&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
     <title>Resort</title>
 </head>
 <body>
@@ -20,28 +23,75 @@
  <button class="button"><b>Book Now</b></button>
 </div>
 </section>
+<h1 class="about_heading">About Us</h1><br>
     <section class="About">
-        <h1 style="text-align:right; font-size: 25px;">About Us</h1>
+        
         <div class="para">
             <p>Access 100+ resorts across India and the world, where most exciting moments are waiting for you.
             Just relax by beach. Embrace the sunset. Discover the hidden secrets of mist-draped hills. Dine in a tree-house.</p>
             <p>
              Get ready to wander through the storied halls of a fairy tale palace, where dreams come to life with <q>Central Resort</q> 
             </p>
-            <button class="know-more">Know More..</button>
+            <button class="know-more-container">Know More..</button>
         </div>
-    </section>
+    
         <div class="amenities">
-            <h3 style="margin-right: 49px;">Amenities we provide:</h3>
+            <h3 >Amenities we provide:</h3>
             <ul>
-                <li>Complementary Breakfast</li>
-                <li>Swimming pool</li>
-                <li>Cafeteria</li>
-                <li>Free acess to internet</li>
-                <li>Adventurous activities </li>
+                <li><i class="fa-solid fa-mug-saucer"></i>Complementary Breakfast</li>
+                <li><i class="fa-solid fa-person-swimming"></i>Swimming pool</li>
+                <li><i class="fa-solid fa-dumbbell"></i>Gym</li>
+                <li><i class="fa-solid fa-wifi"></i> Free acess to internet</li>
+                <li><i class="fa-solid fa-gamepad"></i>Games and adventures activities </li>
             </ul>
         </div>
-   
+    </section>
+    <h1 class="room-heading">Room Types</h1>
+    <section class="room-type-container">
+        <div class="room-images">
+            <img src="hotel-room.jpg" alt="room image">
+        </div>
+        <div class="room-list">
+            <h4>Single Occupancy</h4>
+            <p> A room perfect for one person, consisting of one bed,small size living room and a mini kitchen.</p><br>
+            <h4>Family Rooms</h4>
+            <p>A living room connected with 2 bedrooms and kitchen.Perfect for 4 members</p><br>
+            <h4>Duplex Rooms</h4>
+            <p>This is the ideal solution for families and groups of friends wishing to enjoy a short, medium or long stay in the city. This 35 m² room with king size bed, mini bar,kitchen plus the terrace, gives guests great privacy and can accommodate up to four people. 
+            </p>
+        </div>
+        
+    </section>
+    <div class="help-button">
+        <h4>Need Help?</h4>
+    </div>
+    <h1 class="form-heading">Make your next vacation the most memorable one</h1>
+    <h2 class="form-heading">Fill the form now!!</h2>
+    <section class="form-container">
+        <form>
+            <div class="form-group">
+                <label for="name">Your Full Name</label><br>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email id</label><br>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="booking-date">Date of booking</label><br>
+                <input type="date" id="date" required>
+            </div>
+            <div class="form-group">
+                <label for="room-type">Select Room Type<label><br>
+                <select name="room-type" id="room-type" required>
+                    <option value="" selected disabled>Select...</option>
+                    <option value="single room">Single Room</option>
+                    <option value="family room">Family Room</option>
+                    <option value="duplex room">Duplex Room</option>
+            </div>
+            <input type="submit" value="Book" style="margin: 7px;">
+        </form>
+    </section>
 </body>
 </html>
 
